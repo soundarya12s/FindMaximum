@@ -11,13 +11,11 @@ namespace FindMax
         public void FindMax<T>(T[] array)
         {
             Array.Sort(array);
-           
-            PrintMax(array.Max());
+            foreach(var data in array){
+                 Console.writeLine(data);
+            }
            
         }
-        public void PrintMax<T>(T max)
-        {
-            Console.WriteLine("Max value:" + max);
-        }
+       
     }
 }
